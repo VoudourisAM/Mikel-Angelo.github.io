@@ -1,0 +1,235 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/****************************** MY CODE ******************************/
+
+/**** BODY ****/
+body{
+  background-image: url("images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/**** HEADER-LEFT CONTAINER ****/
+section.header-left{
+  float: left;
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.9);
+}
+/**** BRAND NAME ****/
+.brand-container{
+  color: white;
+}
+@font-face{
+  src: url("fonts/Montserrat Font/Montserrat-Light.ttf");
+  font-family: monlight;
+}
+.brand-container h2.brand-name{
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 10px 30px;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid white;
+  margin-top: 30px;
+  font-family: monlight;
+}
+.brand-container h2 span.firstname{
+  opacity: 0.6;
+  font-weight: lighter;
+}
+.brand-container p{
+  text-align: center;
+  font-family: monlight;
+  font-size: 13px;
+  line-height: 35px;
+}
+/**** LINKS ****/
+.links-container ul{
+  width: fit-content;
+  margin: 5px auto 0px auto;
+  display: block;
+  font-family: monlight;
+  font-size: 13px;
+}
+.links-container ul li{
+  list-style-type: none;
+  text-transform: uppercase;
+  line-height: 30px;
+  text-align: center;
+}
+.links-container ul li a{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.links-container .a-cv{
+  display: none;
+}
+/**** Copyright Container ****/
+.copyright-container p{
+  display: none;
+}
+
+@media only screen and (min-width: 1000px){
+/**** HEADER-LEFT CONTAINER ****/
+section.header-left{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  background: rgba(0, 0, 0, 0.9);
+}
+/**** LINKS ****/
+.links-container ul{
+  float: left;
+  margin-left: 30px;
+  width: calc(100% - 57px);
+}
+.links-container ul li{
+  text-align: left;
+  border-bottom: 1px solid white;
+  line-height: 50px;
+  font-size: 15px;
+}
+.links-container ul li.last{
+  border: none;
+}
+.links-container ul li a{
+  display: block;
+  text-align: left;
+}
+.links-container .a-cv{
+  display: block;
+  text-align: center;
+  border: 1px solid white;
+  margin-top: 50px;
+  
+  /*DEFAULT*/
+  transition: all.5s;
+}
+.links-container .a-cv:hover{
+  background-color: #3d3d3d;
+  /*DEFAULT*/
+  transition: all.5s;
+}
+/**** Copyright Container ****/
+.copyright-container p{
+  display: block;
+  float: left;
+  color: white;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-family: monlight;
+  font-size: 12px;
+  opacity: 0.7;
+}
+}
