@@ -460,7 +460,7 @@ a.fa {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 10px 20px 55px black; /* DEKSIA KATW THOLOURA XRWMA */
+    /*box-shadow: 10px 20px 55px black; /* DEKSIA KATW THOLOURA XRWMA */
   }
   .desktop-transparent{
     background: rgba(0, 0, 0, 0.5);
