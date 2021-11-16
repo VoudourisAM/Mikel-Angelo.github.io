@@ -104,6 +104,10 @@ input, select {
 /****************************** MY CODE ******************************/
 
 /**** BODY ****/
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   background-image: url("images/bg2.jpg");
   background-position: center;
@@ -122,12 +126,13 @@ section.header-left{
 /**** BRAND NAME ****/
 .brand-container{
   color: white;
+  margin-top: 0;
 }
 @font-face{
   src: url("fonts/Montserrat Font/Montserrat-Light.ttf");
   font-family: monlight;
 }
-.brand-container h2.brand-name{
+.brand-container h2.brand-name .a-h2-link{
   width: fit-content;
   margin: 0 auto;
   display: block;
@@ -135,8 +140,9 @@ section.header-left{
   padding: 10px 30px;
   color: white;
   text-transform: uppercase;
+  text-decoration: none;
   border: 2px solid white;
-  margin-top: 30px;
+  margin-top: 20px;
   font-family: monlight;
 }
 .brand-container h2 span.firstname{
@@ -152,7 +158,7 @@ section.header-left{
 /**** LINKS ****/
 .links-container ul{
   width: fit-content;
-  margin: 5px auto 0px auto;
+  margin: 5px auto 10px auto;
   display: block;
   font-family: monlight;
   font-size: 13px;
@@ -168,67 +174,92 @@ section.header-left{
   color: white;
   text-decoration: none;
   opacity: 0.8;
+  /*DEFAULT*/
+  transition: all.5s;
+}
+.links-container ul li a:hover{
+  opacity: 0.5;
+  /*DEFAULT*/
+  transition: all.5s;
 }
 .links-container .a-cv{
   display: none;
 }
-/**** Copyright Container ****/
-.copyright-container p{
+.sm-container p.sm{
   display: none;
 }
-.sm-left{
+.cv-container{
   display: none;
 }
-
 @media only screen and (min-width: 1000px){
 /**** HEADER-LEFT CONTAINER ****/
 section.header-left{
-  float: left;
   /*
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   */
-  height: 100vh;
-  width: 20%;
-  background: rgba(0, 0, 0, 0.9);
+  height: 100px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+/**** WRAPPER ****/
+section.header-left .header-wrapper{
+  overflow: hidden;
+  max-width: 1920px;
+  background: rgba(0, 0, 0, 0.0);
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+/**** BRAND NAME ****/
+.brand-container h2.brand-name .a-h2-link{
+  border: none;
+  margin-top: 20px;
+  border-right: 1px solid white;
+  padding: 20px 70px 20px 30px;
+  display: block;
 }
 /**** LINKS ****/
 .links-container ul{
-  float: left;
-  margin-left: 30px;
-  width: calc(100% - 57px);
+  width: fit-content;
+  margin-top: 0;
+  margin-right: 105px;
 }
 .links-container ul li{
-  text-align: left;
-  border-bottom: 1px solid white;
-  line-height: 50px;
+  display: inline-block;
   font-size: 15px;
-}
-.links-container ul li.last{
-  border: none;
+  float: left;
 }
 .links-container ul li a{
   display: block;
-  text-align: left;
+  padding: 35px 20px 35px 20px;
+  /*DEFAULT*/
+  transition: all.5s;
 }
+.links-container ul li a:hover{
+  opacity: 0.4;
+  /*DEFAULT*/
+  transition: all.5s;
+}
+/***
 .links-container .a-cv{
   display: block;
   text-align: center;
   border: 1px solid white;
   margin-top: 50px;
-
-  /*DEFAULT*/
+****/
+  /*DEFAULT
   transition: all.5s;
 }
 .links-container .a-cv:hover{
   background-color: #3d3d3d;
-  /*DEFAULT*/
+  /*DEFAULT
   transition: all.5s;
 }
-/**** Social Media Icons ****/
-.sm-left{
+/**** Social Media Icons
   float: left;
   width: 100%;
   text-align: center;
@@ -236,7 +267,7 @@ section.header-left{
   position: absolute;
   bottom: 50px;
 }
-/**** Copyright Container ****/
+/**** Copyright Container
 .copyright-container p{
   color: white;
   display: block;
@@ -247,7 +278,55 @@ section.header-left{
   font-family: monlight;
   font-size: 12px;
   opacity: 0.7;
+}****/
 }
+/**** Profile Container ****/
+@font-face{
+  src: url("fonts/Cormorant Garamond Font/CormorantGaramond-Regular.ttf");
+  font-family: corgar;
+}
+.profile-container{
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+.profile-container .image-desc{
+  width: fit-content;
+  margin: 0 auto 0px;
+  display: block;
+  text-align: center;
+}
+.profile-container img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #ebebeb;
+}
+.profile-container .image-desc h1{
+  margin-top: 10px;
+  color: white;
+  font-family: calibri light;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.profile-container .image-desc p{
+  font-family: calibri light;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #94baff;
+}
+.image-desc .cv-p a{
+ text-align: center;
+ color: white;
+ text-decoration: none;
+ text-transform: uppercase;
+ padding: 15px 35px 15px 35px;
+ text-decoration: underline;
+}
+.p-information{
+  display: none;
 }
 /**** MAIN CONTENT ****/
 main{
@@ -344,11 +423,15 @@ a.fa {
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
   -o-transition: transform 0.5s;
+  /*DEFAULT*/
+  transition: all.5s;
 }
 .fa:hover {
     opacity: 0.9;
     transform: translateY(-3px);
-    color: white;
+    color: rgba(0, 0, 0, 0.7);
+    /*DEFAULT*/
+    transition: all.5s;
 }
 .fa:visited{
   color: white;
@@ -360,33 +443,172 @@ a.fa {
   color: white;
 }
 @media only screen and (min-width: 1000px){
-  /* width FROM W3SCHOOLS*/
-.wrapper::-webkit-scrollbar {
-    width: 10px;
-}
-/* Track FROM W3SCHOOLS*/
-.wrapper::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-/* Handle FROM W3SCHOOLS*/
-.wrapper::-webkit-scrollbar-thumb {
-    background: #888;
-}
-/* Handle on hover FROM W3SCHOOLS*/
-.wrapper::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-main{
-  float: left;
-  width: 80%;=
-}
-.wrapper{
-  width: 70%;
-  height: 80vh;
-  overflow-y: scroll;
-  margin: 100px auto 0px auto;
-}
-footer{
-  display: none;
-}
+  body{
+    background: none;
+  }
+  main{
+    margin-top: 0;
+    width: 100%;
+  }
+  section.header-left{
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .desktop-bg-image{
+    background-image: url("images/bg4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 20px 55px black; /* DEKSIA KATW THOLOURA XRWMA */
+  }
+  .desktop-transparent{
+    background: rgba(0, 0, 0, 0.5);
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .profile-container{
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    display: block;
+    margin-top: 400px;
+    padding:0;
+    width: 1100px;
+    height: auto;
+    box-shadow: 10px 10px 25px black; /* DEKSIA KATW THOLOURA XRWMA */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .profile-container .image-desc{
+    width: fit-content;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-container img{
+    width: 270px;
+    height: 300px;
+    border-radius: 0;
+    border: none;
+  }
+  .profile-container .image-desc h1{
+    color: black;
+    display: none;
+  }
+  .profile-container .image-desc p{
+    display: none;
+  }
+  .p-information{
+    display: block;
+  }
+  .profile-container .p-information{
+    width: 730px;
+    height: 470px;
+    font-family: monlight;
+  }
+  .profile-container .p-information span.firstlastname-profile{
+    font-weight: bolder;
+  }
+  .profile-container .p-information p.profile-paragraph{
+    margin-bottom: 10px;
+  }
+  .profile-container .profile-brand-name{
+    width: 90%;
+    height: auto;
+    margin-top: 87px;
+    border-bottom: 1px solid black;
+    line-height: 35px;
+  }
+  .profile-container .profile-brand-name h1{
+    font-size: 35px;
+    color: black;
+  }
+  .profile-container .profile-brand-name p{
+    font-size: 25px;
+    color: black;
+  }
+  .profile-container .list-info{
+    width: 100%;
+    margin-top: 15px;
+    height: auto;
+    line-height: 52px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .list-info ul li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  .profile-container .list-info ul.second-list li{
+    margin-right: 150px;
+    font-size: 20px;
+    opacity: 0.7;
+    text-transform: inherit;
+  }
+  .profile-container .sm-container{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sm-container p.sm{
+    display: block;
+  }
+  .sm-container p.sm a{
+    padding: 0px 20px 0px 20px;
+  }
+
+  .cv-container{
+    width: fit-content;
+    margin: 280px auto 65px auto;
+    display: block;
+    text-align: center;
+  }
+  .cv-container h2.brand-name a.cv-link{
+    padding: 25px 100px 25px 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    font-family: monlight;
+    font-size: 20px;
+    font-weight: bolder;
+    /*DEFAULT*/
+    transition: all.5s;
+  }
+  .cv-container h2.brand-name a.cv-link:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    /*DEFAULT*/
+    transition: all.5s;
+  }
+  .wrapper{
+    max-width: 1100px;
+    height: auto;
+    margin: 0px auto 0px auto;
+  }
+  footer{
+    height: 70px;
+  }
+  footer p.sm{
+    display: none;
+  }
+  footer .copyright-footer{
+    font-family: monlight;
+    font-size: 15px;
+    margin-top: 30px;
+  }
 }
