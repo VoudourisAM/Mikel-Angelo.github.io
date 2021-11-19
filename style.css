@@ -427,7 +427,7 @@ a.fa {
   /*DEFAULT*/
   transition: all.5s;
 }
-.fa:hover {
+a.fa:hover {
     transform: translateY(-3px);
     color: blue;
     opacity: 0.7;
@@ -443,17 +443,17 @@ a.fa {
 }
 .fa-linkedin:visited{
   color: white;
-}
+}/*
 .fa-linkedin {
   color: white;
 }
 /* GITHUB */
 .fa-github:visited{
   color: white;
-}
+}/*
 .fa-github:hover{
   color: white;
-}
+}*/
 .fa-github{
   color: white;
 }
