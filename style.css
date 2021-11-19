@@ -427,7 +427,7 @@ a.fa {
   /*DEFAULT*/
   transition: all.5s;
 }
-.fa:hover {
+a.fa:hover {
     transform: translateY(-3px);
     color: rgb(15, 82, 186);
     opacity: 0.8;
