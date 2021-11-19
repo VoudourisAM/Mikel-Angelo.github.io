@@ -429,7 +429,7 @@ a.fa {
 }
 .fa:hover {
     transform: translateY(-3px);
-    color: rgb(15, 82, 186);
+    color: white;
     opacity: 0.7;
     /*DEFAULT*/
     transition: all.5s;
@@ -457,6 +457,7 @@ a.fa {
 .fa-github{
   color: white;
 }
+
 @media only screen and (min-width: 1000px){
   body{
     background: none;
