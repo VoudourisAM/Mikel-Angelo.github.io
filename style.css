@@ -429,7 +429,7 @@ a.fa {
 }
 a.fa:hover {
     transform: translateY(-3px);
-    color: blue;
+    color: rgb(15, 82, 186);
     opacity: 0.7;
     /*DEFAULT*/
     transition: all.5s;
