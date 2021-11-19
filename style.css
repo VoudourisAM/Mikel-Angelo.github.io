@@ -202,7 +202,8 @@ section.header-left{
   */
   height: 100px;
   width: 100%;
-  position: fixed;
+  position: sticky;
+  position: -webkit-sticky;
   top: 0;
   left: 0;
   right: 0;
