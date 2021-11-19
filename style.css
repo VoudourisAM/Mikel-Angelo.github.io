@@ -466,24 +466,11 @@ a.fa {
     margin-top: 0;
     width: 100%;
   }
-/**
   section.header-left{
     position: absolute;
     top: 0;
     background: rgba(0, 0, 0, 0.8);
-  } **/
-  section.header-left {
-  background-color: #f1f1f1;
-  padding: 50px 10px;
-  color: black;
-  text-align: center;
-  font-size: 90px;
-  font-weight: bold;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: 0.2s;
-}
+  }
   .desktop-bg-image{
     background-image: url("images/bg4.jpg");
     background-position: center;
