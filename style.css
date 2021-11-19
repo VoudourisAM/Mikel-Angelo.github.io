@@ -429,8 +429,8 @@ a.fa {
 }
 a.fa:hover {
     transform: translateY(-3px);
-    color: rgb(15, 82, 186);
-    opacity: 0.7;
+    color: #0F52BA;
+    opacity: 0.3;
     /*DEFAULT*/
     transition: all.5s;
 }
