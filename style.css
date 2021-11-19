@@ -472,7 +472,7 @@ a.fa {
     top: 0;
     background: rgba(0, 0, 0, 0.8);
   } **/
-  #header-left {
+  section.header-left {
   background-color: #f1f1f1;
   padding: 50px 10px;
   color: black;
