@@ -202,12 +202,6 @@ section.header-left{
   */
   height: 100px;
   width: 100%;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 5;
   background: rgba(0, 0, 0, 0.6);
 }
 /**** WRAPPER ****/
@@ -473,6 +467,8 @@ a.fa {
     width: 100%;
   }
   section.header-left{
+    position: absolute;
+    top: 0;
     background: rgba(0, 0, 0, 0.8);
   }
   .desktop-bg-image{
