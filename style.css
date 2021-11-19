@@ -419,6 +419,7 @@ a.fa {
   font-size: 30px;
   text-align: center;
   text-decoration: none;
+  border-radius: 50%;
   transition: transform 0.5s;
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
@@ -428,7 +429,7 @@ a.fa {
 }
 .fa:hover {
     transform: translateY(-3px);
-    background-color: rgba(15, 82, 186, 0.9);
+    color: rgba(15, 82, 186, 0.9);
     /*DEFAULT*/
     transition: all.5s;
 }
