@@ -414,11 +414,13 @@ footer .copyright-footer{
   font-size: 12px;
 }
 /**** SOCIAL MEDIA ICONS ****/
+/**** SOCIAL MEDIA ICONS ****/
 a.fa {
   padding: 10px;
   font-size: 30px;
   text-align: center;
   text-decoration: none;
+  border-radius: 50%;
   transition: transform 0.5s;
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
@@ -427,16 +429,30 @@ a.fa {
   transition: all.5s;
 }
 .fa:hover {
-    opacity: 0.9;
     transform: translateY(-3px);
-    color: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0.7;
     /*DEFAULT*/
     transition: all.5s;
 }
 .fa:visited{
   color: white;
 }
+/* LINKED-IN */
+.fa-linkedin:hover{
+  color: white;
+}
+.fa-linkedin:visited{
+  color: white;
+}
 .fa-linkedin {
+  color: white;
+}
+/* GITHUB */
+.fa-github:visited{
+  color: white;
+}
+.fa-github:hover{
   color: white;
 }
 .fa-github{
