@@ -428,7 +428,7 @@ a.fa {
 }
 .fa:hover {
     transform: translateY(-3px);
-    color: rgba(15, 82, 186, 0.9);
+    background-color: rgba(15, 82, 186, 0.9);
     /*DEFAULT*/
     transition: all.5s;
 }
