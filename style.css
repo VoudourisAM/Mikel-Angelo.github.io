@@ -429,18 +429,18 @@ a.fa {
 }
 .fa:hover {
     transform: translateY(-3px);
-    color: white;
-    opacity: 0.7;
+    color: #0F52BA;
+    opacity: 0.8;
     /*DEFAULT*/
     transition: all.5s;
 }
 .fa:visited{
   color: white;
 }
-/* LINKED-IN */
+/* LINKED-IN
 .fa-linkedin:hover{
   color: white;
-}
+}*/
 .fa-linkedin:visited{
   color: white;
 }
@@ -450,10 +450,10 @@ a.fa {
 /* GITHUB */
 .fa-github:visited{
   color: white;
-}
+}/*
 .fa-github:hover{
   color: white;
-}
+}*/
 .fa-github{
   color: white;
 }
