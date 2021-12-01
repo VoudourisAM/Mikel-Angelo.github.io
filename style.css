@@ -419,7 +419,6 @@ a.fa {
   font-size: 30px;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
   transition: transform 0.5s;
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
@@ -428,36 +427,21 @@ a.fa {
   transition: all.5s;
 }
 .fa:hover {
+    opacity: 0.9;
     transform: translateY(-3px);
-    color: white;
-    opacity: 0.7;
+    color: rgba(0, 0, 0, 0.7);
     /*DEFAULT*/
     transition: all.5s;
 }
 .fa:visited{
   color: white;
 }
-/* LINKED-IN */
-.fa-linkedin:hover{
-  color: white;
-}
-.fa-linkedin:visited{
-  color: white;
-}
 .fa-linkedin {
-  color: white;
-}
-/* GITHUB */
-.fa-github:visited{
-  color: white;
-}
-.fa-github:hover{
   color: white;
 }
 .fa-github{
   color: white;
 }
-
 @media only screen and (min-width: 1000px){
   body{
     background: none;
@@ -467,9 +451,17 @@ a.fa {
     width: 100%;
   }
   section.header-left{
+    /*
     position: absolute;
     top: 0;
-    background: rgba(0, 0, 0, 0.8);
+    */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 999;
+    background: rgba(0, 0, 0);
   }
   .desktop-bg-image{
     background-image: url("images/bg4.jpg");
