@@ -347,6 +347,7 @@ main .section-container h2{
   background-color: #d6d6d6;
   margin-bottom: 10px;
   font-weight: bolder;
+  color: rgb(40, 40, 43);
 }
 main .section-container h3{
   text-align: left;
